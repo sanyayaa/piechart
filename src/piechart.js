@@ -71,7 +71,7 @@ const CombinedJailPopulationPieChart = ({ jailData }) => {
     // }
     
 
-    if (filter1 === 'prisonType') {
+    if (selectedFilters.prisonType) {
       filteredData.push(
         { name: 'UT', value: getTotalValue('Male UT') + getTotalValue('Female UT') + getTotalValue('Transgender UT') },
         { name: 'CT', value: getTotalValue('Male CT') + getTotalValue('Female CT') + getTotalValue('Transgender CT') },
